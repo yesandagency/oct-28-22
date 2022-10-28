@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bronze Thursday Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="title">
+			<h1 class="small">Welcome to Bronze Workstream</h1>
+			<h5>October 28, 2022</h5>
+			<h3>Happy Friday!</h3>
+			<p class="small">Leadership wants to hear from you. Tracy has tasked our team with developing a survey so that we are able to guage employee affinity for a particular set of memes. Our team has been chosen to pilot the initial effort.</p>
+		</div>
+
+		<button id="start" class="btn btn-success">Begin Check In</button>
+		<div id="which">
+			<p>Choose a game:</p>
+			<button id="leader" class="btn btn-danger">Leadership</button>
+			<button id="hr" class="btn btn-primary">Human Resources</button>
+			<button id="yesand" class="btn btn-primary">Nathan's Cut</button>
+			<button id="netflix" class="btn btn-primary">Squid Game</button>
+		</div>
+		<div id="game">
+			<div id="person">
+				<h1>100% Success</h1>
+				<p>Thank you for completing this check in game. We will submit this data to Leadership for further analysis within 5-7 business days. Based on these results your team is:</p>
+					<ul>
+						<li><strong>ambitious</strong></li>
+						<li><strong>innovative</strong></li>
+						<li><strong>courageous</strong></li>
+						<li><strong>outcome-oriented</strong></li>
+					</ul>
+				<div id="details" class="lead mb-5">
+					<div class="row">
+						<div class="col-3 text-large">
+							<div id="clickPercent"></div>
+							<img width="100%" src="ux-diagram.jpg" />
+						</div>
+						<div class="col-3 text-large">
+							<div id="clickPercent1"></div>
+							<img width="100%" src="website-maintenance-meme.jpg" />
+						</div>
+
+						<div class="col-3 text-large">
+							<div id="clickPercent2"></div>
+							<img width="100%" src="learn-code-just-google-it-meme.jpg" />
+						</div>
+
+						<div class="col-3 text-large">
+							<div id="clickPercent3"></div>
+							<img width="100%" src="JavaScript-Developer-Memes.jpg" />
+						</div>
+					</div>		
+				</div>
+			</div>
+
+				<div id="play">
+					<h1>hello team, we need your help.</h1>
+					<p>Help Yes& to collect data to make better decisions. (5 minutes)</p>
+					<div class="row">
+						<div class="col-3">
+							<button type="button" onClick="onClick()"><img width="100%" src="ux-diagram.jpg" /></button>
+							<p>Tally: <a id="clicks">0</a></p>
+						</div>
+						<div class="col-3">
+							<button type="button" onClick="onClick1()"><img width="100%" src="website-maintenance-meme.jpg" /></button>
+							<p>Tally: <a id="clicks1">0</a></p>
+						</div>
+						<div class="col-3">
+							<button type="button" onClick="onClick2()"><img width="100%" src="learn-code-just-google-it-meme.jpg" /></button>
+							<p>Tally: <a id="clicks2">0</a></p>
+						</div>
+						<div class="col-3">
+							<button type="button" onClick="onClick3()"><img width="100%" src="JavaScript-Developer-Memes.jpg" /></button>
+							<p>Tally: <a id="clicks3">0</a></p>
+						</div>
+					</div>
+					<button onClick="onEndGame()" class="btn btn-success">Analyze Results</button>
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+
+	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
